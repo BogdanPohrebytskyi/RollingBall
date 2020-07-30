@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6EA24A7-9F8D-4B3F-8680-955E536A98D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RollingBall</RootNamespace>
+    <AssemblyName>RollingBall</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Ball.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="Prism, Version=7.2.0.1422, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Core.7.2.0.1422\lib\net45\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Models\Convertors\Bool_to_color_conventor.cs" />
+    <Compile Include="Models\Convertors\bool_to_visible_convertor.cs" />
+    <Compile Include="Models\Convertors\Life_time_to_opacity_convertor.cs" />
+    <Compile Include="Models\Convertors\Round_convertor.cs" />
+    <Compile Include="Models\Convertors\Shape_to_margin_convertor.cs" />
+    <Compile Include="Models\Levels\Level10.cs" />
+    <Compile Include="Models\Levels\Level3.cs" />
+    <Compile Include="Models\Levels\Level4.cs" />
+    <Compile Include="Models\Levels\Level5.cs" />
+    <Compile Include="Models\Levels\Level6.cs" />
+    <Compile Include="Models\Levels\Level7.cs" />
+    <Compile Include="Models\Levels\Level8.cs" />
+    <Compile Include="Models\Levels\Level9.cs" />
+    <Compile Include="Models\test.cs" />
+    <Compile Include="Pages\Arcade_page.xaml.cs">
+      <DependentUpon>Arcade_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Challenge_game_page.xaml.cs">
+      <DependentUpon>Challenge_game_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Challenge_page.xaml.cs">
+      <DependentUpon>Challenge_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Base_game_page.cs" />
+    <Compile Include="Pages\Game_page.xaml.cs">
+      <DependentUpon>Game_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main_menu.xaml.cs">
+      <DependentUpon>Main_menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Convertors\Ball_to_margin_convertor.cs" />
+    <Compile Include="Models\Convertors\hole_size_convertor.cs" />
+    <Compile Include="Models\Convertors\hole_to_margin_convertor.cs" />
+    <Compile Include="Models\Convertors\int_to_Margin_convertor.cs" />
+    <Compile Include="Models\Convertors\ParentSize_to_FontSize_convertor.cs" />
+    <Compile Include="Models\Convertors\point_to_margin_convertor.cs" />
+    <Compile Include="Models\geometry_lib.cs" />
+    <Compile Include="Models\Hole.cs" />
+    <Compile Include="Models\Levels\Level.cs" />
+    <Compile Include="Models\Levels\Level1.cs" />
+    <Compile Include="Models\Levels\Level2.cs" />
+    <Compile Include="Pages\Main_window.xaml.cs">
+      <DependentUpon>Main_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings_page.xaml.cs">
+      <DependentUpon>Settings_page.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Pages\Arcade_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Challenge_game_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\Challenge_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Game_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Main_menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Main_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Settings_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\test_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Resources_dictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Ball.cs" />
+    <Compile Include="Models\Segment.cs" />
+    <Compile Include="Models\Wall.cs" />
+    <Compile Include="Pages\test_page.xaml.cs">
+      <DependentUpon>test_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ball.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\background.jpg" />
+    <Resource Include="Resources\Ball2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Hole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\wood_sound.mp3" />
+    <Content Include="Resources\wood_sound2.mp3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

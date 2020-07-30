@@ -1,0 +1,17 @@
+﻿<Application x:Class="RollingBall.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:RollingBall"
+             xmlns:local2="clr-namespace:RollingBall.Pages"
+             StartupUri="Pages\Main_window.xaml">
+    <!--StartupUri="MainWindow.xaml">-->
+    <!--StartupUri="test_page.xaml">-->
+    <!--StartupUri="Main_menu.xaml">-->
+    <!--StartupUri="Arcade_page.xaml">-->
+    <!--StartupUri="Pages\Main_window.xaml">-->
+    <!--StartupUri="Pages\Challenge_game_page.xaml">-->
+    <!--StartupUri="Pages\Settings_page.xaml">-->
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

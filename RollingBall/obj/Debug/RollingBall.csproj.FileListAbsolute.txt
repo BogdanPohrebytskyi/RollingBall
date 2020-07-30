@@ -1,0 +1,74 @@
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\bin\Debug\RollingBall.exe.config
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\bin\Debug\RollingBall.exe
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\bin\Debug\RollingBall.pdb
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\bin\Debug\Prism.dll
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\bin\Debug\System.ValueTuple.dll
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\bin\Debug\Prism.pdb
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\bin\Debug\Prism.xml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\bin\Debug\System.ValueTuple.xml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall.csprojAssemblyReference.cache
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Arcade_page.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Challenge_game_page.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Challenge_page.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Game_page.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Main_menu.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Main_window.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Settings_page.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\test_page.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\App.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall_Content.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall_MarkupCompile.cache
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall_MarkupCompile.lref
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Arcade_page.baml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Challenge_game_page.baml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Challenge_page.baml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Game_page.baml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Main_menu.baml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Main_window.baml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\Settings_page.baml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Pages\test_page.baml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\Resources\Resources_dictionary.baml
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall.g.resources
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall.Properties.Resources.resources
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall.csproj.GenerateResource.cache
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall.csproj.CopyComplete
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall.exe
+C:\Users\Богдан\Desktop\RollingBall\RollingBall\obj\Debug\RollingBall.pdb
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\bin\Debug\RollingBall.exe.config
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\bin\Debug\RollingBall.exe
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\bin\Debug\RollingBall.pdb
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\bin\Debug\Prism.dll
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\bin\Debug\System.ValueTuple.dll
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\bin\Debug\Prism.pdb
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\bin\Debug\Prism.xml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\bin\Debug\System.ValueTuple.xml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall.csprojAssemblyReference.cache
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Arcade_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Challenge_game_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Challenge_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Game_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Main_menu.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Main_window.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Settings_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\test_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\App.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall_Content.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall_MarkupCompile.cache
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall_MarkupCompile.lref
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Arcade_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Challenge_game_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Challenge_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Game_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Main_menu.baml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Main_window.baml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\Settings_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Pages\test_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\Resources\Resources_dictionary.baml
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall.g.resources
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall.Properties.Resources.resources
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall.csproj.GenerateResource.cache
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall.csproj.CopyComplete
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall.exe
+C:\Bogdan\Институт\поиск работы\Projects\RollingBall\RollingBall\obj\Debug\RollingBall.pdb

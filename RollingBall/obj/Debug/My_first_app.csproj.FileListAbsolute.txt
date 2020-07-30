@@ -1,0 +1,74 @@
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\bin\Debug\My_first_app.exe.config
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\bin\Debug\My_first_app.exe
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\bin\Debug\My_first_app.pdb
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app.csprojAssemblyReference.cache
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\App.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app_MarkupCompile.cache
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app_MarkupCompile.lref
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app.g.resources
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app.Properties.Resources.resources
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app.csproj.GenerateResource.cache
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app.exe
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app.pdb
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\bin\Debug\Prism.dll
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\bin\Debug\System.ValueTuple.dll
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\bin\Debug\Prism.pdb
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\bin\Debug\Prism.xml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\bin\Debug\System.ValueTuple.xml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app.csproj.CopyComplete
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Resources\Resources_dictionary.baml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Main_window.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Main_window.baml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Settings_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Settings_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Main_menu.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Main_menu.baml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Arcade_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Arcade_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Challenge_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Challenge_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Game_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Game_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Challenge_game_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\Challenge_game_page.baml
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\My_first_app_Content.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\test_page.g.cs
+C:\Bogdan\Институт\поиск работы\Projects\My_first_app\My_first_app\obj\Debug\Pages\test_page.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\bin\Debug\My_first_app.exe.config
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\bin\Debug\My_first_app.exe
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\bin\Debug\My_first_app.pdb
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\bin\Debug\Prism.dll
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\bin\Debug\System.ValueTuple.dll
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\bin\Debug\Prism.pdb
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\bin\Debug\Prism.xml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\bin\Debug\System.ValueTuple.xml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app.csprojAssemblyReference.cache
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Arcade_page.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Challenge_game_page.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Challenge_page.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Game_page.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Main_menu.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Main_window.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Settings_page.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\test_page.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\App.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app_Content.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app_MarkupCompile.cache
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app_MarkupCompile.lref
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Arcade_page.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Challenge_game_page.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Challenge_page.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Game_page.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Main_menu.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Main_window.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\Settings_page.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Pages\test_page.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\Resources\Resources_dictionary.baml
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app.g.resources
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app.Properties.Resources.resources
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app.csproj.GenerateResource.cache
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app.csproj.CopyComplete
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app.exe
+C:\Users\Богдан\Desktop\My_first_app\My_first_app\obj\Debug\My_first_app.pdb

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RollingBall.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="window_size" Type="System.Windows.Point" Scope="User">
+      <Value Profile="(Default)">800,550</Value>
+    </Setting>
+    <Setting Name="ball_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ball.png</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

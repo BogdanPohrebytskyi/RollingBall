@@ -1,0 +1,234 @@
+﻿<local:Base_game_page x:Class="RollingBall.Pages.Challenge_game_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:RollingBall.Pages"
+               
+      Title="Challenge_game_page">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Resources\Resources_dictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Canvas Background="Gray" Name="game_area" 
+                        MouseLeftButtonDown="game_area_MouseLeftButtonDown" 
+                        MouseLeftButtonUp="game_area_MouseLeftButtonUp"
+                        MouseMove="game_area_MouseMove"
+                        MouseLeave="game_area_MouseLeave"
+                        MouseRightButtonUp="game_area_MouseRightButtonUp">
+        <!--Hole-->
+        <Image Name="hole_image"
+                   Source="{Binding Path=hole.image, Mode=OneWay}"
+                   Width="{Binding Path=hole.radius, Converter={StaticResource hole_size_convertor}, Mode=OneWay}"
+                   Height="{Binding Path=hole.radius, Converter={StaticResource hole_size_convertor}, Mode=OneWay}"
+                   Margin="{Binding Path=hole, Converter={StaticResource hole_to_margin_Converter}, Mode=OneWay}">
+        </Image>
+
+        <!--Ball-->
+        <Image Name="ball_image"
+                   Source="{Binding Path=ball.image, Mode=OneWay}"
+                   Width="{Binding Path=ball.radius, Converter={StaticResource hole_size_convertor}, Mode=OneWay}"
+                   Height="{Binding Path=ball.radius, Converter={StaticResource hole_size_convertor}, Mode=OneWay}"
+                   Margin="{Binding Path=ball, Converter={StaticResource ball_to_margin_Converter}, Mode=OneWay}">
+        </Image>
+        
+        <!--New wall in process of creation-->
+        <Line 
+                   X1="{Binding Path=A.X}"
+                   Y1="{Binding Path=A.Y}"
+                   X2="{Binding Path=B.X}" 
+                   Y2="{Binding Path=B.Y}" 
+                   Stroke="{Binding Path=line_eanbled, Converter={StaticResource Bool_to_color_conventor}}"
+                   StrokeThickness ="2"
+                   Opacity="0.5"/>
+        <Ellipse 
+                     Fill="{Binding Path=line_eanbled, Converter={StaticResource Bool_to_color_conventor}}"
+                     Height="5"
+                     Width="5"
+                     Margin="{Binding Path=A, Converter={StaticResource Shape_to_margin_convertor}}"
+                     Opacity="0.5"/>
+        <Ellipse 
+                     Fill="{Binding Path=line_eanbled, Converter={StaticResource Bool_to_color_conventor}}"
+                     Height="5"
+                     Width="5"
+                     Margin="{Binding Path=B, Converter={StaticResource Shape_to_margin_convertor}}"
+                     Opacity="0.5"/>
+
+        <!--Walls-->     
+        <ItemsControl ItemsSource="{Binding walls}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Canvas>
+                        <Line 
+                               X1="{Binding Path=A.X}"
+                               Y1="{Binding Path=A.Y}"
+                               X2="{Binding Path=B.X}" 
+                               Y2="{Binding Path=B.Y}" 
+                               Stroke="Black"
+                               StrokeThickness ="2"
+                               Opacity="{Binding Path=life_time, Converter={StaticResource Life_time_to_opacity_convertor}}"/>
+                        <Ellipse 
+                                 Fill="Black"
+                                 Height="5"
+                                 Width="5"
+                                 Margin="{Binding Path=A, Converter={StaticResource Shape_to_margin_convertor}}"
+                                 Opacity="{Binding Path=life_time, Converter={StaticResource Life_time_to_opacity_convertor}}"/>
+                        <Ellipse 
+                                 Fill="Black"
+                                 Height="5"
+                                 Width="5"
+                                 Margin="{Binding Path=B, Converter={StaticResource Shape_to_margin_convertor}}"
+                                 Opacity="{Binding Path=life_time, Converter={StaticResource Life_time_to_opacity_convertor}}"/>
+                    </Canvas>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+
+        <!--Pause menu-->
+        <Grid x:Name="pause_grid"  Visibility="{Binding Path=pause, Converter={StaticResource bool_to_visible_convertor}}"
+              Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Canvas}}, Path=ActualWidth}"
+              Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Canvas}}, Path=ActualHeight}">
+            <Grid.Background>
+                <SolidColorBrush Color="Black" Opacity="0.5" />
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="1"  Style="{DynamicResource Header}">Pause</Label>
+            <Button x:Name="resume_button"
+                    Grid.Column="1" Grid.Row="1" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="resume_button_Click">Resume</Button>
+            <Button x:Name="restart_button"
+                    Grid.Column="1" Grid.Row="2" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="restart_button_Click">Restart (R key)</Button>
+            <Button x:Name="exit_button" 
+                    Grid.Column="1" Grid.Row="3" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="exit_button_Click">Main menu</Button>
+        </Grid>
+
+        <!--Level complite menu-->
+        <Grid x:Name="level_complite_grid" Visibility="{Binding Path=level_complite, Converter={StaticResource bool_to_visible_convertor}}"
+              Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Canvas}}, Path=ActualWidth}"
+              Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Canvas}}, Path=ActualHeight}">
+            <Grid.Background>
+                <SolidColorBrush Color="Black" Opacity="0.5" />
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="3"  Style="{DynamicResource Header}">Level Complete!</Label>
+            <Button x:Name="next_button"
+                    Grid.Column="1" Grid.Row="1" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="next_button_Click">Next level</Button>
+            <Button x:Name="restart_level_button"
+                    Grid.Column="1" Grid.Row="2" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="restart_level_button_Click">Restart</Button>
+            <Button x:Name="choose_level_button"
+                    Grid.Column="1" Grid.Row="3" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="choose_level_Click">Choose level</Button>
+            <Button x:Name="main_menu_button"
+                    Grid.Column="1" Grid.Row="4" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="exit_button_Click">Main menu</Button>
+        </Grid>
+
+        <!--Chalenge mode GUI-->
+        <Grid x:Name="Challenge_mode_GUI" Visibility="{Binding Path=challenge_mode, Converter={StaticResource bool_to_visible_convertor}}"
+              Margin="10"
+              Width="160"
+              Height="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Viewbox Grid.Row="0" Grid.Column="0">
+                <TextBlock Style="{DynamicResource ResourceKey=Text}">Time:</TextBlock>
+            </Viewbox>
+            <Viewbox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3">
+                <TextBlock Style="{DynamicResource ResourceKey=Text}" Text="{Binding Path=time_left, Converter={StaticResource Round_convertor}}"></TextBlock>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="0">
+                <TextBlock Style="{DynamicResource ResourceKey=Text}">Walls:</TextBlock>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="1">
+                <TextBlock Style="{DynamicResource ResourceKey=Text}" Text="{Binding Path=walls_counter}"></TextBlock>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="2">
+                <TextBlock Style="{DynamicResource ResourceKey=Text}">/</TextBlock>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="3">
+                <TextBlock Style="{DynamicResource ResourceKey=Text}"  Text="{Binding Path=level.walls_max_count}"></TextBlock>
+            </Viewbox>
+        </Grid>
+        <!--Challenge failed GUI -->
+        <Grid x:Name="challenge_failed_gui" Visibility="{Binding Path=challenge_fail, Converter={StaticResource bool_to_visible_convertor}}"
+              Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Canvas}}, Path=ActualWidth}"
+              Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Canvas}}, Path=ActualHeight}">
+            <Grid.Background>
+                <SolidColorBrush Color="Black" Opacity="0.5" />
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="3"  Style="{DynamicResource Header}">Level Failed!</Label>
+            <Button x:Name="fail_restart_level_button"
+                    Grid.Column="1" Grid.Row="1" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="restart_level_button_Click">Restart</Button>
+            <Button x:Name="fail_choose_level_button"
+                    Grid.Column="1" Grid.Row="2" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="choose_level_Click">Choose level</Button>
+            <Button x:Name="fail_main_menu_button"
+                    Grid.Column="1" Grid.Row="3" 
+                    Style="{DynamicResource MenuButtonStyle}"
+                    Click="exit_button_Click">Main menu</Button>
+        </Grid>
+    </Canvas>
+</local:Base_game_page>
