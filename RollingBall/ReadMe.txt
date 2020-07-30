@@ -9,7 +9,7 @@ Main classes are: Base_game_page, Ball, Wall.
 Base_game_page is View-Model part of MVVM pattern. It create other calsses objects, define their interaction, control GUI and processes user imput.
 It is separated to provide page inheritance to add challenge mode functional in the OOP maner.
 
-Ball object change its position and notify Base_game_page when level is comleted.
+Ball object change its position and notify Base_game_page when level is completed.
 
 Wall object control its exist time and notify Base_game_page when its must be deleted.
 
