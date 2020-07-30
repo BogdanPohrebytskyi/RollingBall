@@ -11,6 +11,6 @@ It is separated to provide page inheritance to add challenge mode functional in 
 
 Ball object change its position and notify Base_game_page when level is completed.
 
-Wall object control its exist time and notify Base_game_page when its must be deleted.
+Wall object control its existence time and notify Base_game_page when its must be deleted.
 
 Concurrent computing, events, data binding, LINQ were used in the developing process.
